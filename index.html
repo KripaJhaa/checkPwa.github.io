@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <style>
+    
+    canvas {
+        border:5px solid #d3d3d3;
+        background-color: aliceblue;
+        width: 100%
+        
+    }
+    #button{
+        background-color: bisque;
+        text-align: center;
+        font-family: fantasy;
+        text-decoration-color: blue;
+        font-size: 125%;
+    }
+    
+    #block{
+        background-color: cadetblue;
+    }
+    
+    
+    #body{
+        background-color: blueviolet;
+    }
+        
+        #s1{
+            background-color: aquamarine;
+            margin:auto;
+            box-shadow: 5px 5px 5px #000000;       
+        }
+        
+        #HScore{
+            box-shadow: 5px 5px 5px #000000;
+            background-color: cadetblue;
+            position: relative;
+            left: -20%;
+            top: -20%;
+            align-items: center;
+            width: 30%;
+            height:20%;
+            float: right;
+            text-align: center;
+        }
+        #info{
+            font-family:cursive;
+            text-decoration: underline;
+            color:bisque;
+            margin: 0 auto;
+            font-size: 80%;
+            float: left;
+        }
+        
+        #box{
+            margin: 0 auto;
+        }
+        
+    
+</style>
+    
+    
+    
+<audio id="myAudio">
+  <source src="crashsound.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+    
+
+    
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<script type="text/javascript" src="script.js" async></script>
+    
+</head>
+    
+<!--    <script type="text/javascript" src="sw.js"></script>-->
+    
+    
+   
+    <body id="body" onload="startGame()" >
+    
+     <br>
+     <br>
+     <br>
+    
+    <div id="box">
+    <div id="info">
+    <p>Press Any Button to stay in the air</p>
+
+    <p>How long can you stay alive?</p>
+    </div>  
+        <div id="HScore"><h3>Highest Score</h3>
+            <h3 id="s1">3</h3>    
+        </div>
+        
+        </div>    
+    
+    </body>
+</html>
